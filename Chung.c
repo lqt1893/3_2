@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <math.h>
-int a[100][100], m, n;
+int m, n;
 void nh(int a[][100],int m,int n)
 {
 	int i, j;
@@ -223,6 +223,7 @@ bool ktdx(int a[][100],int m, int n)
 }
 int main()
 {
+	int a[100][100];
 	nh(a, m, n);
 	xu(a, m, n);
 	//printf("%d", tk(a, m,n));// tim kiem
