@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <math.h>
-void nh(int a[][100],int &m,int &n)
+int a[100][100], m, n;
+void nh(int a[][100],int m,int n)
 {
 	int i, j;
 	printf("(dong, cot <= 100) So dong, cot lan luot la: ");
@@ -222,7 +223,6 @@ bool ktdx(int a[][100],int m, int n)
 }
 int main()
 {
-	int a[100][100], m, n;
 	nh(a, m, n);
 	xu(a, m, n);
 	//printf("%d", tk(a, m,n));// tim kiem
@@ -232,8 +232,8 @@ int main()
 		printf("Day khong phai la ma tran toan nguyen to");*/
 	//to(a, m, n);//tong
 	//printf("%d", ma(a, m, n));//tim max
-	/*if (ktdx(a, m, n))//kiem tra doi xung
+	if (ktdx(a, m, n))//kiem tra doi xung
 		printf("Ma tran doi xung");
 	else
-		printf("Ma tran khong doi xung");*/
+		printf("Ma tran khong doi xung");
 }
